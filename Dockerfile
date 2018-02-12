@@ -9,6 +9,5 @@ RUN mkdir -p dropbox/images
 RUN mkdir -p data/images
 # Copy rsync script into image
 COPY rsync.sh .
-#mount volume on /dropbox/images
-RUN sh rsyncBuild.sh
+# Run the script
 CMD sh rsync.sh
