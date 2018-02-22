@@ -22,3 +22,7 @@ Remove the tags <$DIR1>, <$DIR2>, and <$DIR3>. Replace them with your own respec
 
 - Check logs for system events -> will output the results of the rsync and inotify results. Debug from there.
 
+## Additions
+
+- Included a sample Dockerfile for testing purposes. The Dockerfile, once built into an image, will copy the rsync script and run it on startup. The image will serve as a testing environment.
+
