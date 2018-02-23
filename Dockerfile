@@ -5,8 +5,8 @@ RUN yum install wget rsync -y
 RUN wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN rpm -ivh epel-release-latest-7.noarch.rpm
 RUN yum install inotify-tools -y
-RUN mkdir -p dropbox/images
-RUN mkdir -p data/images
+RUN mkdir -p <$DIRECTORY_1>/images
+RUN mkdir -p <$DIRECTORY_2>/images
 # Copy rsync script into image
 COPY rsync.sh .
 # Run the script
